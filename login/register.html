@@ -4,44 +4,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Masuk Register|CodingNepal</title>
+  <title>Masuk Register | CodingNepal</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome untuk ikon Google (jika diperlukan) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <div class="wrapper">
-    <form action="#"class="register"id="registerForm">
+   <div class="wrapper">
+     <form action="#" class="register" id="registerForm">
       <h2>Register</h2>
-        <div class="input-field">
-        <input type="text" required>
+      
+      <!-- Added id="username" and placeholder from the image -->
+      <div class="input-field field">
+        <input type="text" placeholder="username" required id="username">
+        <label>Masukkan nama pengguna</label>
+      </div>
+          <!-- Added id="username" and placeholder from the image -->
+      <div class="input-field field">
+        <input type="text" placeholder="email" required id="email">
         <label>Email</label>
       </div>
-      <div class="input-field">
-        <input type="password" required>
+        
+      <!-- Added id="password" and placeholder from the image -->
+      <div class="input-field field">
+        <input type="password" placeholder="Password" required id="password">
         <label>Masukkan kata sandi</label>
       </div>
-      <div class="forget">
-        <label for="remember">
-          <input type="checkbox" id="remember">
-          <p>Ingat aku</p>
-        </label>
-        <a href="#">Lupa kata sandi?</a>
-      </div>
-      <button type="submit">Masuk</button>
-      <div class="login">
-        <p>Sudah punya akun? <a href="#">Masuk</a></p>
-      </div>
-      <p id="massage"></p>
-
+      
+      <!-- Tempat menampilkan pesan error/sukses dari JavaScript -->
+      <p id="message"></p>
+      
       <button type="submit">Daftar</button>
-
+      
       <div class="social">
         <div class="go">
           <a href="index.html">Login</a>
-        </div 
-      </form>
-    
+        </div>
+        <div class="kanan">
+          <i class="fab fa-google"></i> with Google
+        </div>
+      </div>
+    </form>
   </div>
-<p id="massage"></p>
-<script src="js/register.js"></script>
+
+  <!-- Box Alert tambahan (jika skrip JS Anda membutuhkannya) -->
+  <div id="alertBox" class="alert" style="display:none;"></div>
+
+<p id="message"></p>
+<script src="register.js" defer></script>
 </body>
 </html>
