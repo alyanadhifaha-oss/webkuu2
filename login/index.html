@@ -9,16 +9,22 @@
 </head>
 <body>
   <div class="wrapper">
-    <form action="#">
+    <!-- Added class="login" and id="loginForm" from the image -->
+    <form action="#" class="login" id="loginForm">
       <h2>Masuk</h2>
-        <div class="input-field">
-        <input type="text" required>
+      
+      <!-- Added id="username" and placeholder from the image -->
+      <div class="input-field field">
+        <input type="text" placeholder="username" required id="username">
         <label>Email</label>
       </div>
-      <div class="input-field">
-        <input type="password" required>
+      
+      <!-- Added id="password" and placeholder from the image -->
+      <div class="input-field field">
+        <input type="password" placeholder="Password" required id="password">
         <label>Masukkan kata sandi</label>
       </div>
+      
       <div class="forget">
         <label for="remember">
           <input type="checkbox" id="remember">
@@ -26,12 +32,18 @@
         </label>
         <a href="#">Lupa kata sandi?</a>
       </div>
+      
       <button type="submit">Masuk</button>
+      
       <div class="register">
-        <p>Tidak mempunyai akun? <a href="#">Daftar</a></p>
+        <p>Tidak mempunyai akun? <a href="register.html">Daftar</a></p>
       </div>
     </form>
   </div>
-<script src="js/login.js"></script>
+  
+  <div id="alertBox" class="alert" style="display:none;"></div>
+<form/>
+
+<script src="login.js"></script>
 </body>
 </html>
