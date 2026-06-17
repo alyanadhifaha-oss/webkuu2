@@ -12,9 +12,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const user = localStorage.getItem("username");
 
     if (user) {
-        document.getElementById("userInfo").innerText = "Halo, " + user;
+        document.getElementById("userInfoDesktop").innerText = "Halo, " + user;
+        document.getElementById("userInfoMobile").innerText = "Halo, " + user;
 
-        document.getElementById("authArea").innerHTML = `
+        document.getElementById("authAreaDesktop").innerHTML = `
+        document.getElementById("authAreaMobile").innerHTML = `
             <button onclick="logout()" class="nav-cta">Logout</button>
         `;
     }
